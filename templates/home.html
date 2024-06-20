@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+    <div class="jumbotron">
+        <h1 class="display-4">Welcome to the Question Generator!</h1>
+        <p class="lead">This is a simple application to generate random question papers for class 10.</p>
+        <hr class="my-4">
+        <p>To get started, please login or register.</p>
+        <a class="btn btn-primary btn-lg" href="{{ url_for('login') }}" role="button">Login</a>
+        <a class="btn btn-secondary btn-lg" href="{{ url_for('register') }}" role="button">Register</a>
+    </div>
+{% endblock %}
